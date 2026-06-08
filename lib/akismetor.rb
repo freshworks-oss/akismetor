@@ -48,6 +48,6 @@ class Akismetor
 
   def attributes_for_post
     result = attributes.map { |k, v| "#{k}=#{v}" }.join('&')
-    URI.escape(result)
+    URI.encode_www_form(result)
   end
 end
