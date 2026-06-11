@@ -47,6 +47,6 @@ class Akismetor
   end
 
   def attributes_for_post
-    URI.encode_www_form(result)
+    URI.encode_www_form(attributes)
   end
 end
